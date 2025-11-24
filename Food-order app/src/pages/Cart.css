@@ -1,0 +1,113 @@
+/* Cart.css - premium cart page */
+.cart-page{
+  padding: 60px 6%;
+  min-height: 70vh;
+  background: #f8fafc;
+  color: #071024;
+}
+
+.cart-page h1{
+  font-size: 32px;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.cart-items{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-top:16px;
+}
+
+/* card */
+.cart-card{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  background:#fff;
+  padding:16px;
+  border-radius:14px;
+  box-shadow:0 12px 30px rgba(2,6,23,0.06);
+}
+
+.cart-card img{
+  width:120px;
+  height:90px;
+  object-fit:cover;
+  border-radius:10px;
+  flex-shrink:0;
+}
+
+/* info */
+.cart-info{flex:1}
+.cart-info h3{margin:0 0 6px;font-size:18px}
+.cart-info p{margin:0;color:var(--muted);font-size:14px}
+
+.qty-box{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:10px;
+  background:#f3f6f9;
+  padding:6px;
+  border-radius:10px;
+  border:1px solid #eef3f8;
+}
+
+.qty-box button{
+  background:transparent;
+  border:none;
+  font-size:18px;
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+}
+
+/* remove */
+.remove-btn{
+  background:transparent;
+  border:1px solid #ffd6d6;
+  color:#d9534f;
+  padding:8px 10px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* total area */
+.cart-total{
+  margin-top:22px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:18px;
+}
+
+.cart-total h2{font-size:22px;margin:0;font-weight:800}
+.place-order{
+  background:var(--accent-2);
+  color: white;
+  background-color: black;
+  padding:12px 18px;
+  border-radius:12px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  box-shadow:0 14px 36px rgba(43,138,62,0.14);
+}
+
+/* empty cart */
+.empty-cart{
+  padding:80px 6%;
+  text-align:center;
+  font-size:20px;
+  color:var(--muted);
+}
+
+/* responsive */
+@media (max-width:900px){
+  .cart-card{flex-direction:column;align-items:flex-start}
+  .cart-card img{width:100%;height:220px}
+  .cart-total{flex-direction:column;align-items:flex-end}
+}

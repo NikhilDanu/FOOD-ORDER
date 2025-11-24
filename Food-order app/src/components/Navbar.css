@@ -1,0 +1,149 @@
+/* NAVBAR CONTAINER */
+.site-nav {
+  width: 100%;
+  padding: 12px 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BRAND */
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* CENTER LINKS */
+.nav-center {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-center a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s;
+}
+
+.nav-center a:hover {
+  color: #ff7300;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 35px 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* USER ICON */
+.user-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.user-icon:hover {
+  color: #ff7300;
+}
+
+/* CART ICON */
+.cart-icon {
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  color: #333;
+}
+
+.cart-count {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+/* ------------------------------- */
+/* 📱 MOBILE RESPONSIVE (max 600px) */
+/* ------------------------------- */
+@media (max-width: 600px) {
+ 
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+
+
+  .search-box input {
+    width: 180px;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  .user-icon {
+    font-size: 20px;
+  }
+
+  .cart-icon {
+    font-size: 18px;
+  }
+}
+
+/* ------------------------------- */
+/* 📱📲 TABLET RESPONSIVE (600–900px) */
+/* ------------------------------- */
+@media (min-width: 600px) and (max-width: 900px) {
+  .brand {
+    font-size: 22px;
+  }
+
+
+  .search-box input {
+    width: 220px;
+  }
+
+  .nav-right {
+    gap: 18px;
+  }
+}
