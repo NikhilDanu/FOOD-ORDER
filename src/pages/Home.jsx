@@ -40,7 +40,7 @@ export default function Home() {
       <section className="categories">
         <h2>Popular Categories</h2>
         <div className="cat-grid">
-         <Link className="hlo" to="/menu"> <div className="cat-card"><img src={hero} /><p>Pizza</p></div></Link>
+         <Link  to="/menu"> <div className="cat-card"><img src={hero} /><p>Pizza</p></div></Link>
          <Link to="/menu"><div className="cat-card"><img src={hero} /><p>Burger</p></div></Link>
          <Link to="/menu"> <div className="cat-card"><img src={hero} /><p>Pasta</p></div></Link>
          <Link to="/menu"> <div className="cat-card"><img src={hero} /><p>Pizza</p></div></Link>
