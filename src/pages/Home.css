@@ -19,6 +19,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
+=======
+.hero-left{
+  margin-left: 150px;
+  height: 90vh;
+  
+}
+.hero-p p{
+  font-size: 70px;
+  width: 60vw;
+  margin-top: 80px;
+}
+.hero-btn{
+>>>>>>> 2a8292eef3b3c71165814e627028e79f4e60e99e
 
 .hero-left {
   flex: 1;
@@ -79,6 +93,7 @@
 /* HERO MOBILE */
 /* ------------------------ */
 @media (max-width: 900px) {
+<<<<<<< HEAD
   .hero {
     padding: 40px 4%;
   }
@@ -86,6 +101,21 @@
   .hero-title {
     font-size: 40px;
     margin-top: 250px;
+=======
+  .hero-p p {
+  font-size: 45px;
+  position: absolute;
+  top: 36%;
+  left: 10%;width: 100%;
+  }
+
+  .hero-btn {
+    display: flex;
+    position: absolute;
+    top: 58%;
+    left: 12%;
+    gap: 10px;
+>>>>>>> 2a8292eef3b3c71165814e627028e79f4e60e99e
   }
 
   .hero-btns .btn {
@@ -94,11 +124,18 @@
     border: 2px solid black;
   }
 
+<<<<<<< HEAD
   .hero-stats {
     gap: 20px;
+=======
+  .hero-detail  {
+    position:  absolute;
+    top: 67%;
+>>>>>>> 2a8292eef3b3c71165814e627028e79f4e60e99e
     font-size: 16px;
   }
 
+<<<<<<< HEAD
   .hero-img {
     height: 30vh;
     width: 80vw;
@@ -106,6 +143,15 @@
     top: 15%;
     left: 8%;
    
+=======
+  .detail {
+    display: flex;
+    font-size: 20px;
+   position: absolute;
+   left: 13%;
+   top: 78%;
+   gap: 20px;
+>>>>>>> 2a8292eef3b3c71165814e627028e79f4e60e99e
   }
 }
 
